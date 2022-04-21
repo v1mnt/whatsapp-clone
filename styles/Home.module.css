@@ -44,23 +44,6 @@
   align-items: center;
 }
 
-.notification {
-  display: none;
-  align-items: center;
-  gap: 15px;
-  height: 89px;
-  background-color: #182229;
-  padding: 13px 12px 14px 13px;
-}
-
-.notification .text div{
-  color: white;
-}
-.notification .text span{
-  color: #8696a0;
-  font-size: 14px;
-}
-
 .search {
   display: flex;
   align-items: center;

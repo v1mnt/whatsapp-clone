@@ -10,6 +10,7 @@ import Intro from "../components/Intro";
 import ChatWindow from "../components/ChatWindow";
 import NewChat from "../components/NewChat";
 import Login from "../components/Login";
+import Image from "next/image";
 import api from "./api/api";
 
 export default function Home() {
@@ -79,21 +80,6 @@ export default function Home() {
                         </div>
                     </div>
                 </header>
-                <div className={styles.notification}>
-                    <NotificationsOffIcon
-                        sx={{
-                            boxSizing: "content-box",
-                            bgcolor: "#53bdeb",
-                            borderRadius: "50%",
-                            padding: "10px",
-                            color: "#182229",
-                        }}
-                    />
-                    <div className={styles.text}>
-                        <div>Receba notificações de novas mensagens</div>
-                        <span>Ativar notificações na área de trabalho </span>
-                    </div>
-                </div>
                 <div className={styles.search}>
                     <div className={styles.searchInput}>
                         <SearchIcon

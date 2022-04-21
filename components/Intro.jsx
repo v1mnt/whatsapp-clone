@@ -26,7 +26,7 @@ export default function Intro() {
                 <a
                     style={{ color: "#00a884", marginLeft: "5px" }}
                     href="https://www.whatsapp.com/download"
-                    target="_blank"
+                    rel="noreferrer"
                 >
                     Baixe aqui
                 </a>
