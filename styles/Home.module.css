@@ -94,3 +94,12 @@
 .rightSide {
   width: 100%;
 }
+
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    margin-top: 0px;
+    height: 100vh;
+    width: auto;
+  }
+}

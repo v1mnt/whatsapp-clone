@@ -27,7 +27,7 @@ export default function NewChat({ user, chatlist, show, setShow }) {
     }
 
     return (
-        <div className={styles.container} style={{ left: show ? 0 : -415 }}>
+        <div className={styles.container} style={{ left: show ? 0 : -420 }}>
             <div className={styles.header}>
                 <div className={styles.title}>
                     <div onClick={handleClose} className={styles.icon}>

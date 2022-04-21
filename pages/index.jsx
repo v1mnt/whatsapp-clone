@@ -2,7 +2,6 @@ import styles from "../styles/Home.module.css";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import NotificationsOffIcon from "@mui/icons-material/NotificationsOff";
 import SearchIcon from "@mui/icons-material/Search";
 import Profile from "../components/Profile";
 import { useState, useEffect } from "react";
@@ -10,13 +9,16 @@ import Intro from "../components/Intro";
 import ChatWindow from "../components/ChatWindow";
 import NewChat from "../components/NewChat";
 import Login from "../components/Login";
-import Image from "next/image";
 import api from "./api/api";
 
 export default function Home() {
     const [chatlist, setChatList] = useState([]);
     const [activeChat, setActiveChat] = useState({});
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState({
+        userId: 123,
+        avatar: "",
+        name: "Marcelo",
+    });
     const [showNewChat, setShowNewChat] = useState(false);
 
     useEffect(() => {
