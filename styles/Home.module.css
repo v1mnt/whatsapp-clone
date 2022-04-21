@@ -96,10 +96,10 @@
 }
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1400px) {
   .container {
     margin-top: 0px;
     height: 100vh;
-    width: auto;
+    width: 100%;
   }
 }
