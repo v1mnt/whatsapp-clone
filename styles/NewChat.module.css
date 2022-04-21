@@ -1,0 +1,97 @@
+.container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #111b21;
+    display: flex;
+    flex-direction: column;
+    transition: all ease 0.3s;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #202c33;
+    height: 108px;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.text {
+    font-size: 19px;
+    color: #d9dee0;
+    font-weight: 500;
+}
+
+.list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  
+.list::-webkit-scrollbar-thumb {
+    background-color: #374045;
+}
+
+
+.newChatItem {
+    display: flex;
+    align-items: center;
+    height: 72px;
+}
+
+.newChatItem:hover {
+    background-color: #202c33;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    gap: 15px;
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #202c33;
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    font-size: 17px;
+    font-weight: 400;
+    color: #e9edef;
+}
+
+.bio {
+    color: #8696a0;
+    font-size: 14px;
+}
+
+.image img {
+    width: 49px;
+    border-radius: 50%;
+}
