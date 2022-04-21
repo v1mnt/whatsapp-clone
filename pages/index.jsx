@@ -14,11 +14,7 @@ import api from "./api/api";
 export default function Home() {
     const [chatlist, setChatList] = useState([]);
     const [activeChat, setActiveChat] = useState({});
-    const [user, setUser] = useState({
-        userId: 123,
-        avatar: "",
-        name: "Marcelo",
-    });
+    const [user, setUser] = useState(null);
     const [showNewChat, setShowNewChat] = useState(false);
 
     useEffect(() => {
