@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import api from "../pages/api/api";
 import styles from "../styles/Login.module.css";
 
@@ -14,12 +15,13 @@ export default function Login({ onReceiveGoogle }) {
 
     return (
         <div className={styles.login}>
-            <div>
-                <h2>Bem vindo!</h2>
-            </div>
-            <button onClick={handleLoginGoogle}>
-                Fazer login com o google
-            </button>
+            <Button
+                sx={{ fontSize: "15px", padding: "15px" }}
+                onClick={handleLoginGoogle}
+                variant="contained"
+            >
+                Logar com o google
+            </Button>
         </div>
     );
 }
